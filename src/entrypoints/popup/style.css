@@ -1,0 +1,36 @@
+.container {
+  width: 180px;
+  height: 330px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+
+.logo {
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #34495e;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

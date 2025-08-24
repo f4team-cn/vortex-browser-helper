@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Default Popup Title</title>
+    <meta name="manifest.type" content="browser_action"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                 stroke="#3498db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+        </div>
+        <h1>Vortex Browser Helper</h1>
+    </header>
+    <main class="main-content">
+        <p class="description">
+            Vortex Browser Helper 是一个浏览器插件，用于拦截浏览器下载并调用 Vortex 下载器进行下载。使用前确保 Vortex
+            在运行状态。Github: <a href="https://github.com/f4team-cn/vortex-browser-helper">https://github.com/f4team-cn/vortex-browser-helper</a>
+        </p>
+    </main>
+</div>
+<script type="module" src="./main.ts"></script>
+</body>
+</html>
