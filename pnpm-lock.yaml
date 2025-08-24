@@ -13,7 +13,7 @@ importers:
         version: 5.9.2
       wxt:
         specifier: ^0.20.6
-        version: 0.20.8(@types/node@24.3.0)(jiti@2.5.1)(rollup@4.48.0)
+        version: 0.20.6(@types/node@24.3.0)(jiti@2.5.1)(rollup@4.48.0)
 
 packages:
 
@@ -232,21 +232,8 @@ packages:
     resolution: {integrity: sha512-ZT55BDLV0yv0RBm2czMiZ+SqCGO7AvmOM3G/w2xhVPH+te0aKgFjmBvGlL1dH+ql2tgGO3MVrbb3jCKyvpgnxA==}
     engines: {node: 20 || >=22}
 
-  '@jridgewell/gen-mapping@0.3.13':
-    resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
-
-  '@jridgewell/remapping@2.3.5':
-    resolution: {integrity: sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==}
-
-  '@jridgewell/resolve-uri@3.1.2':
-    resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
-    engines: {node: '>=6.0.0'}
-
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
-
-  '@jridgewell/trace-mapping@0.3.30':
-    resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -271,6 +258,15 @@ packages:
   '@pnpm/npm-conf@2.3.1':
     resolution: {integrity: sha512-c83qWb22rNRuB0UaVCI0uRPNRr8Z0FWnEIvT47jiHAmOIUHbBOg5XvV7pM5x+rKn9HRpjxquDbXYSXr3fAKFcw==}
     engines: {node: '>=12'}
+
+  '@rollup/pluginutils@5.2.0':
+    resolution: {integrity: sha512-qWJ2ZTbmumwiLFomfzTyt5Kng4hwPi9rwCYN4SHb6eaRU1KNO4ccxINHr/VhH4GgPlt1XfSTLX2LBTme8ne4Zw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
 
   '@rollup/rollup-android-arm-eabi@4.48.0':
     resolution: {integrity: sha512-aVzKH922ogVAWkKiyKXorjYymz2084zrhrZRXtLrA5eEx5SO8Dj0c/4FpCHZyn7MKzhW2pW4tK28vVr+5oQ2xw==}
@@ -413,8 +409,8 @@ packages:
   '@webext-core/match-patterns@1.0.3':
     resolution: {integrity: sha512-NY39ACqCxdKBmHgw361M9pfJma8e4AZo20w9AY+5ZjIj1W2dvXC8J31G5fjfOGbulW9w4WKpT8fPooi0mLkn9A==}
 
-  '@wxt-dev/browser@0.1.4':
-    resolution: {integrity: sha512-9x03I15i79XU8qYwjv4le0K2HdMl/Yga2wUBSoUbcrCnamv8P3nvuYxREQ9C5QY/qPAfeEVdAtaTrS3KWak71g==}
+  '@wxt-dev/browser@0.0.317':
+    resolution: {integrity: sha512-tpFr/OJjTlGY7FLIr950fNi9fIBLQQ9pRVDDajeqEMip5LsXFAxpbF4I1GAGUkdTJEghKQ8P5N9XnsAdbPBAOQ==}
 
   '@wxt-dev/storage@1.1.1':
     resolution: {integrity: sha512-H1vYWeoWz03INV4r+sLYDFil88b3rgMMfgGp/EXy3bLbveJeiMiFs/G0bsBN2Ra87Iqlf2oVYRb/ABQpAugbew==}
@@ -802,6 +798,9 @@ packages:
   escape-string-regexp@5.0.0:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
+
+  estree-walker@2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
@@ -1643,8 +1642,8 @@ packages:
     resolution: {integrity: sha512-0fk9zBqO67Nq5M/m45qHCJxylV/DhBlIOVExqgOMiCCrzrhU6tCibRXNqE3jwJLftzE9SNuZtYbpzcO+i9FiKw==}
     engines: {node: '>=14.16'}
 
-  strip-literal@3.0.0:
-    resolution: {integrity: sha512-TcccoMhJOM3OebGhSBEmp3UZ2SfDMZUEBdRA/9ynfLi8yYajyWX3JiXArcJt4Umh4vISpspkQIY8ZZoCqjbviA==}
+  strip-literal@2.1.1:
+    resolution: {integrity: sha512-631UJ6O00eNGfMiWG78ck80dfBab8X6IVFB51jZK5Icd7XAs60Z5y7QdSd/wGIklnWvRbUNloVzhOKKmutxQ6Q==}
 
   stubborn-fs@1.2.5:
     resolution: {integrity: sha512-H2N9c26eXjzL/S/K+i/RHHcFanE74dptvvjM8iwzwbVcWY/zjBbgRqF3K0DY4+OD+uTTASTBvDoxPDaPN02D7g==}
@@ -1713,21 +1712,16 @@ packages:
   undici-types@7.10.0:
     resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
 
-  unimport@5.2.0:
-    resolution: {integrity: sha512-bTuAMMOOqIAyjV4i4UH7P07pO+EsVxmhOzQ2YJ290J6mkLUdozNhb5I/YoOEheeNADC03ent3Qj07X0fWfUpmw==}
-    engines: {node: '>=18.12.0'}
+  unimport@3.14.6:
+    resolution: {integrity: sha512-CYvbDaTT04Rh8bmD8jz3WPmHYZRG/NnvYVzwD6V1YAlvvKROlAeNDUBhkBGzNav2RKaeuXvlWYaa1V4Lfi/O0g==}
 
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
-  unplugin-utils@0.2.5:
-    resolution: {integrity: sha512-gwXJnPRewT4rT7sBi/IvxKTjsms7jX7QIDLOClApuZwR49SXbrB1z2NLUZ+vDHyqCj/n58OzRRqaW+B8OZi8vg==}
-    engines: {node: '>=18.12.0'}
-
-  unplugin@2.3.8:
-    resolution: {integrity: sha512-lkaSIlxceytPyt9yfb1h7L9jDFqwMqvUZeGsKB7Z8QrvAO3xZv2S+xMQQYzxk0AGJHcQhbcvhKEstrMy99jnuQ==}
-    engines: {node: '>=18.12.0'}
+  unplugin@1.16.1:
+    resolution: {integrity: sha512-4/u/j4FrCKdi17jaxuJA0jClGxB1AvU2hw/IuayPc4ay1XGaJs/rbb4v5WKwAjNifjmXK9PIFyuPiaK8azyR9w==}
+    engines: {node: '>=14.0.0'}
 
   untildify@4.0.0:
     resolution: {integrity: sha512-KK8xQ1mkzZeg9inewmFVDNkg3l5LUhoq9kN6iWYB/CC9YMG8HA+c1Q8HwDe6dEX7kErrEVNVBO3fWsVq5iDgtw==}
@@ -1748,6 +1742,46 @@ packages:
     resolution: {integrity: sha512-EbKSKh+bh1E1IFxeO0pg1n4dvoOTt0UDiXMd/qn++r98+jPO1xtJilvXldeuQ8giIB5IkpjCgMleHMNEsGH6pg==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
+
+  vite@6.3.5:
+    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
+      jiti: '>=1.21.0'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      sass-embedded: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
+        optional: true
 
   vite@7.1.3:
     resolution: {integrity: sha512-OOUi5zjkDxYrKhTV3V7iKsoS37VUM7v40+HuwEmcrsf11Cdx9y3DIr2Px6liIcZFwt3XSRpQvFpL3WVy7ApkGw==}
@@ -1852,8 +1886,8 @@ packages:
     resolution: {integrity: sha512-h3Fbisa2nKGPxCpm89Hk33lBLsnaGBvctQopaBSOW/uIs6FTe1ATyAnKFJrzVs9vpGdsTe73WF3V4lIsk4Gacw==}
     engines: {node: '>=18'}
 
-  wxt@0.20.8:
-    resolution: {integrity: sha512-aP6SY7oUK1+uqG5fVdFaBeFTXJ+Av/CRTYM47ljZnSSd18zJhevwU+JU7wFKAJwYomEK1eHE+F9YVAKmA82EbA==}
+  wxt@0.20.6:
+    resolution: {integrity: sha512-CdExyv2yWfpmPWFjhrKBA+nUSHOTRpRKqScod66AaLpMQ0famZ18tM0+4a9m7oX4Pts1XZH4nw79XQp06QsC2Q==}
     hasBin: true
 
   xdg-basedir@5.1.0:
@@ -2036,24 +2070,7 @@ snapshots:
     dependencies:
       '@isaacs/balanced-match': 4.0.1
 
-  '@jridgewell/gen-mapping@0.3.13':
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
-      '@jridgewell/trace-mapping': 0.3.30
-
-  '@jridgewell/remapping@2.3.5':
-    dependencies:
-      '@jridgewell/gen-mapping': 0.3.13
-      '@jridgewell/trace-mapping': 0.3.30
-
-  '@jridgewell/resolve-uri@3.1.2': {}
-
   '@jridgewell/sourcemap-codec@1.5.5': {}
-
-  '@jridgewell/trace-mapping@0.3.30':
-    dependencies:
-      '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.5
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2078,6 +2095,14 @@ snapshots:
       '@pnpm/config.env-replace': 1.1.0
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
+
+  '@rollup/pluginutils@5.2.0(rollup@4.48.0)':
+    dependencies:
+      '@types/estree': 1.0.8
+      estree-walker: 2.0.2
+      picomatch: 4.0.3
+    optionalDependencies:
+      rollup: 4.48.0
 
   '@rollup/rollup-android-arm-eabi@4.48.0':
     optional: true
@@ -2170,7 +2195,7 @@ snapshots:
 
   '@webext-core/match-patterns@1.0.3': {}
 
-  '@wxt-dev/browser@0.1.4':
+  '@wxt-dev/browser@0.0.317':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
@@ -2559,6 +2584,8 @@ snapshots:
   escape-string-regexp@4.0.0: {}
 
   escape-string-regexp@5.0.0: {}
+
+  estree-walker@2.0.2: {}
 
   estree-walker@3.0.3:
     dependencies:
@@ -3414,7 +3441,7 @@ snapshots:
 
   strip-json-comments@5.0.1: {}
 
-  strip-literal@3.0.0:
+  strip-literal@2.1.1:
     dependencies:
       js-tokens: 9.0.1
 
@@ -3469,35 +3496,30 @@ snapshots:
 
   undici-types@7.10.0: {}
 
-  unimport@5.2.0:
+  unimport@3.14.6(rollup@4.48.0):
     dependencies:
+      '@rollup/pluginutils': 5.2.0(rollup@4.48.0)
       acorn: 8.15.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
+      fast-glob: 3.3.3
       local-pkg: 1.1.2
       magic-string: 0.30.18
       mlly: 1.8.0
       pathe: 2.0.3
       picomatch: 4.0.3
-      pkg-types: 2.3.0
+      pkg-types: 1.3.1
       scule: 1.3.0
-      strip-literal: 3.0.0
-      tinyglobby: 0.2.14
-      unplugin: 2.3.8
-      unplugin-utils: 0.2.5
+      strip-literal: 2.1.1
+      unplugin: 1.16.1
+    transitivePeerDependencies:
+      - rollup
 
   universalify@2.0.1: {}
 
-  unplugin-utils@0.2.5:
+  unplugin@1.16.1:
     dependencies:
-      pathe: 2.0.3
-      picomatch: 4.0.3
-
-  unplugin@2.3.8:
-    dependencies:
-      '@jridgewell/remapping': 2.3.5
       acorn: 8.15.0
-      picomatch: 4.0.3
       webpack-virtual-modules: 0.6.2
 
   untildify@4.0.0: {}
@@ -3539,6 +3561,19 @@ snapshots:
       - terser
       - tsx
       - yaml
+
+  vite@6.3.5(@types/node@24.3.0)(jiti@2.5.1):
+    dependencies:
+      esbuild: 0.25.9
+      fdir: 6.5.0(picomatch@4.0.3)
+      picomatch: 4.0.3
+      postcss: 8.5.6
+      rollup: 4.48.0
+      tinyglobby: 0.2.14
+    optionalDependencies:
+      '@types/node': 24.3.0
+      fsevents: 2.3.3
+      jiti: 2.5.1
 
   vite@7.1.3(@types/node@24.3.0)(jiti@2.5.1):
     dependencies:
@@ -3631,14 +3666,14 @@ snapshots:
     dependencies:
       is-wsl: 3.1.0
 
-  wxt@0.20.8(@types/node@24.3.0)(jiti@2.5.1)(rollup@4.48.0):
+  wxt@0.20.6(@types/node@24.3.0)(jiti@2.5.1)(rollup@4.48.0):
     dependencies:
       '@1natsu/wait-element': 4.1.2
       '@aklinker1/rollup-plugin-visualizer': 5.12.0(rollup@4.48.0)
       '@webext-core/fake-browser': 1.3.2
       '@webext-core/isolated-element': 1.1.2
       '@webext-core/match-patterns': 1.0.3
-      '@wxt-dev/browser': 0.1.4
+      '@wxt-dev/browser': 0.0.317
       '@wxt-dev/storage': 1.1.1
       async-mutex: 0.5.0
       c12: 3.2.0(magicast@0.3.5)
@@ -3674,8 +3709,8 @@ snapshots:
       prompts: 2.4.2
       publish-browser-extension: 3.0.1
       scule: 1.3.0
-      unimport: 5.2.0
-      vite: 7.1.3(@types/node@24.3.0)(jiti@2.5.1)
+      unimport: 3.14.6(rollup@4.48.0)
+      vite: 6.3.5(@types/node@24.3.0)(jiti@2.5.1)
       vite-node: 3.2.4(@types/node@24.3.0)(jiti@2.5.1)
       web-ext-run: 0.2.3
     transitivePeerDependencies:

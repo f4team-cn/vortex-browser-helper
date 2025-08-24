@@ -16,5 +16,11 @@
   "devDependencies": {
     "typescript": "^5.8.3",
     "wxt": "^0.20.6"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "spawn-sync"
+    ]
   }
 }
