@@ -51,6 +51,7 @@ const sendTaskToClient = async (
 };
 
 export default defineBackground(() => {
+  let scriptStartupTime = Date.now();
   // 缓存请求 Headers
   browser.webRequest.onBeforeSendHeaders.addListener(
       (details) => {
@@ -64,6 +65,10 @@ export default defineBackground(() => {
       ["requestHeaders"]
   );
 
+  browser.runtime.onStartup.addListener(() => {
+    scriptStartupTime = Date.now();
+  });
+
   // 缓存下载文件名
   browser.downloads.onDeterminingFilename.addListener((item, suggest) => {
     if (item.filename) filenameCache.set(item.id, item.filename);
@@ -73,6 +78,9 @@ export default defineBackground(() => {
   // 下载拦截
   browser.downloads.onCreated.addListener((item) => {
     (async () => {
+
+      if (new Date(item.startTime).getTime() < scriptStartupTime) return;
+
       // 回调下载直接放行
       if (callbackDownloadUrls.has(item.url)) {
         callbackDownloadUrls.delete(item.url);
