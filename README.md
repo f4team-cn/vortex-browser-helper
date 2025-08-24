@@ -11,7 +11,7 @@
 
 ## 安装
 
-1. 下载扩展包或通过浏览器应用商店安装。
+1. 在 [Github Releases](https://github.com/f4team-cn/vortex-browser-helper/releases) 中下载扩展包安装。
 2. 安装完成后，确保 **Vortex 客户端** 已运行。
 3. 浏览器中开启下载时，任务将自动转发到 Vortex。
 
