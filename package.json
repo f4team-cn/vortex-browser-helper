@@ -1,7 +1,7 @@
 {
   "name": "vortex-browser-helper",
   "description": "基于 Vortex 的下载助手",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "wxt",
